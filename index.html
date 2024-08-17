@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="weather.js"></script>
+    <link rel="stylesheet" href="weather.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="weather_logo.png" type="image/x-icon">
+</head>
+<body onload="weather()">
+    <center>
+        <h1 style="font-family: fantasy;margin-top: 10px;letter-spacing: 3px;font-weight: bolder;">WEATHER APP</h1>
+        <div class="input_sec">
+            <input type="search" id="search" value="delhi" autofocus>
+            <input type="button" value="Search" id="searchBtn" onclick="weather()">
+        </div>
+
+        <!-- main details section -->
+        <div class="details">
+            <h4 id="location"><i class="fa fa-map-marker-alt"></i> <span id="location_val">Location</span></h4><br>
+            <h1 id="temp"><span id="temp_val" style="font-family: math;">25</span>&deg;c</h1>
+            <h6 id="feels_like" style="font-family: math;">feels like</h6><br>
+            <div class="hrLine"></div>
+            <div class="extraDetails">
+                <div id="humidity">Humidity <br><span id="hum_val" style="font-family: math;">90%</span></div>
+                <div id="wind">Wind <br><span id="wind_val" style="font-family: math;">100</span></div>
+                <div id="pressure">Pressure <br><span id="pre_val" style="font-family: math;">1000</span></div>
+            </div>
+        </div>
+    </center>
+    
+</body>
+</html>
